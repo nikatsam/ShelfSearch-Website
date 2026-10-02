@@ -44,10 +44,11 @@ npx --yes html-validate site/index.html
 - The site is a single page with in-page sections, not a multi-level document hierarchy. Do not add
   a fabricated `BreadcrumbList`; add breadcrumb navigation only if real nested pages are introduced.
 
-The IndexNow key and URL submission must be used only after deployment, when the key file is
-publicly reachable. Sitemap submission to Google Search Console, Bing Webmaster Tools, and Yandex
-Webmaster also requires ownership verification in each service. Discovery requests do not guarantee
-crawling or indexing.
+The IndexNow key file was verified over HTTPS after deployment. On 2026-10-02, the canonical
+homepage URL listed in the sitemap was submitted to IndexNow; the endpoint returned HTTP 202
+(accepted). IndexNow sends URL notifications rather than submitting an XML sitemap. Acceptance
+does not guarantee crawling or indexing. Sitemap submission to Google Search Console, Bing
+Webmaster Tools, and Yandex Webmaster still requires site ownership verification in each service.
 
 ## GitHub Pages caveat
 
