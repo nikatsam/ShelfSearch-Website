@@ -52,6 +52,15 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="typography.css">
   <link rel="stylesheet" href="store-cta.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nikatsam.github.io/ShelfSearch-Website/" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -72,6 +81,12 @@
   <div class="mobile-nav" id="mobile-nav" hidden>
     <a href="#how-it-works">How it works</a><a href="#privacy">Private by design</a><a href="#faq">FAQ</a>
   </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="#top" aria-current="page">Home</a></li>
+    </ol>
+  </nav>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
